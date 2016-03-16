@@ -187,7 +187,7 @@ gulp.task('js', ['csrf'], function () {
     return gulp.src(paths.js)
         // .pipe(uglify())
         .pipe(concat('ueditor.all.js'))
-        .pipe(gulp.dest(dst.js))
+        .pipe(gulp.dest(dst.js));
         //.pipe(livereload());
 });
 
